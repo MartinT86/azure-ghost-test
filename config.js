@@ -14,10 +14,17 @@ config = {
         url: 'https://ghost-test-heroku.herokuapp.com/',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                host: 'ec2-54-75-228-86.eu-west-1.compute.amazonaws.com',
+                user: 'vyxvdqsmxpkpsk',
+                password: 'WHsbzY3yFSFBTDJlXHPVrEaSYL',
+                database: 'd36blq9muhce9u',
+                port: '5432'
             },
+            // connection: {
+            //     filename: path.join(__dirname, '/content/data/ghost.db')
+            // },
             debug: false
         },
 
